@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:personallandingpage/components/constants.dart';
+import 'package:personallandingpage/view/skills.dart';
+import 'package:personallandingpage/view/top_banner.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -8,6 +11,18 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: KBlacker,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            TopBanner(),
+            SizedBox(height: 16),
+            Skills(),
+            SizedBox(height: 16),
+          ],
+        ),
+      ),
+    );
   }
 }
