@@ -15,7 +15,7 @@ class TopBanner extends StatelessWidget {
         children: [
           Image.asset(
             'assets/images/banner.png',
-            fit: BoxFit.fitWidth,
+            fit: BoxFit.cover,
             width: MediaQuery.of(context).size.width,
             height: 800,
           ),

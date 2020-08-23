@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:personallandingpage/components/constants.dart';
+import 'package:personallandingpage/view/about_me.dart';
 import 'package:personallandingpage/view/skills.dart';
 import 'package:personallandingpage/view/top_banner.dart';
 
@@ -17,9 +18,11 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             TopBanner(),
-            SizedBox(height: 16),
+            SizedBox(height: 64),
             Skills(),
-            SizedBox(height: 16),
+            SizedBox(height: 128),
+            AboutMe(),
+            SizedBox(height: 32),
           ],
         ),
       ),
