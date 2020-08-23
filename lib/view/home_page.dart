@@ -22,7 +22,9 @@ class _HomePageState extends State<HomePage> {
             Skills(),
             SizedBox(height: 128),
             AboutMe(),
-            SizedBox(height: 32),
+            //SizedBox(height: 32),
+            //TODO: Interests
+            //TODO: Footer (made with flutter)
           ],
         ),
       ),
