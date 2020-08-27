@@ -34,8 +34,8 @@ class _SkillsState extends State<Skills> {
           ),
           SizedBox(height: 16),
           SkillCard(
-            cardWidth: 800,
-            cardHeight: 200,
+            cardWidth: 1000,
+            cardHeight: 275,
             cardText: 'Mobile Development',
             hasButton: true,
             buttonText: 'My Projects',

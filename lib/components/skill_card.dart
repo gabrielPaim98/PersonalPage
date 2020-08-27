@@ -6,9 +6,9 @@ class SkillCard extends StatefulWidget {
   SkillCard({
     this.child,
     this.buttonText,
-    this.cardHeight: 200,
+    this.cardHeight: 225,
     this.cardText,
-    this.cardWidth: 394,
+    this.cardWidth: 494,
     this.hasButton: false,
   });
 

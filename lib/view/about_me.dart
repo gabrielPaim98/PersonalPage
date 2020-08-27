@@ -101,7 +101,6 @@ class AboutMe extends StatelessWidget {
                       SocialMediaCard(imageAsset: 'assets/images/whatsapp.png', link: 'https://wa.me/5571991642456', name: 'whatsapp',),
                       SocialMediaCard(imageAsset: 'assets/images/linkedin.png', link: 'https://www.linkedin.com/in/GabrielPaim', name: 'linkedIn',),
                       SocialMediaCard(imageAsset: 'assets/images/instagram.png', link: 'https://www.instagram.com/gpaimm/', name: 'instagram',),
-                      SocialMediaCard(imageAsset: 'assets/images/facebook.png', link: 'https://www.facebook.com/gabrielFp00/', name: 'facebook',),
                       SocialMediaCard(imageAsset: 'assets/images/email.png', link: 'mailto:g.paimm98@gmail.com', name: 'mail',),
                     ],
                   ),
