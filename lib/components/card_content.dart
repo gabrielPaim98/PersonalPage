@@ -38,3 +38,32 @@ class CardContent extends StatelessWidget {
     );
   }
 }
+
+class CardContentMobile extends StatelessWidget {
+  CardContentMobile({this.child, this.title});
+
+  String title;
+  Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(vertical: 16),
+      width: MediaQuery.of(context).size.width,
+      child: Row(
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          child??Container(),
+          SizedBox(
+            width: 16,
+          ),
+          Text(
+            title,
+            style: TextStyle(fontSize: 24, color: KBlacker),
+          ),
+        ],
+      ),
+    );
+  }
+}
