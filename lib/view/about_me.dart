@@ -25,9 +25,10 @@ class AboutMe extends StatelessWidget {
           Expanded(
             flex: 3,
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 128, vertical: 64),
+              margin: EdgeInsets.symmetric(horizontal: 100),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
                     'About Me',
