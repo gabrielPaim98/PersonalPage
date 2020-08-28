@@ -27,53 +27,48 @@ class TopBannerMobile extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             color: Colors.black87.withOpacity(0.7),
           ),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              Spacer(flex: 1),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  FittedBox(
-                    fit: BoxFit.scaleDown,
-                    child: Text(
-                      'Gabriel Ferrarezi Paim',
-                      style: TextStyle(
-                          color: KWhiter,
-                          fontSize: 48
-                      ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    'Gabriel Ferrarezi Paim',
+                    style: TextStyle(
+                        color: KWhiter,
+                        fontSize: 48
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 24),
-                    child: FittedBox(
-                      fit: BoxFit.scaleDown,
-                      child: Text(
-                        'Software Engineer Student',
-                        style: TextStyle(
-                            color: KWhiter,
-                            fontSize: 32
-                        ),
-                      ),
-                    ),
-                  ),
-                  FittedBox(
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 24),
+                  child: FittedBox(
                     fit: BoxFit.scaleDown,
                     child: Text(
-                      'Mobile Developer',
+                      'Software Engineer Student',
                       style: TextStyle(
                           color: KWhiter,
                           fontSize: 32
                       ),
                     ),
                   ),
-                ],
-              ),
-              Spacer(flex: 4),
-            ],
+                ),
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    'Mobile Developer',
+                    style: TextStyle(
+                        color: KWhiter,
+                        fontSize: 32
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),

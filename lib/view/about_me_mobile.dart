@@ -83,12 +83,12 @@ class AboutMeMobile extends StatelessWidget {
             SizedBox(height: 16),
             Row(
               mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                SocialMediaCard(imageAsset: 'assets/images/whatsapp.png', link: 'https://wa.me/5571991642456', name: 'whatsapp',),
-                SocialMediaCard(imageAsset: 'assets/images/linkedin.png', link: 'https://www.linkedin.com/in/GabrielPaim', name: 'linkedIn',),
-                SocialMediaCard(imageAsset: 'assets/images/instagram.png', link: 'https://www.instagram.com/gpaimm/', name: 'instagram',),
-                SocialMediaCard(imageAsset: 'assets/images/email.png', link: 'mailto:g.paimm98@gmail.com', name: 'mail',),
+                SocialMediaCard(imageAsset: 'assets/images/whatsapp.png', link: 'https://wa.me/5571991642456', name: 'whatsapp', radius: 30),
+                SocialMediaCard(imageAsset: 'assets/images/linkedin.png', link: 'https://www.linkedin.com/in/GabrielPaim', name: 'linkedIn',radius: 30),
+                SocialMediaCard(imageAsset: 'assets/images/instagram.png', link: 'https://www.instagram.com/gpaimm/', name: 'instagram', radius: 30),
+                SocialMediaCard(imageAsset: 'assets/images/email.png', link: 'mailto:g.paimm98@gmail.com', name: 'mail',radius: 30,),
               ],
             ),
             SizedBox(height: 16),

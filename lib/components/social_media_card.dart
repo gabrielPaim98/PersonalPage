@@ -7,9 +7,11 @@ class SocialMediaCard extends StatefulWidget {
     this.link,
     this.name,
     this.imageAsset,
+    this.radius:40
   });
 
   String link, name, imageAsset;
+  double radius;
 
   @override
   _SocialMediaCardState createState() => _SocialMediaCardState();
@@ -35,7 +37,7 @@ class _SocialMediaCardState extends State<SocialMediaCard> {
           widget.imageAsset,
           color: _hovering ? KWhiter : KPurple,
         ),
-        radius: 40,
+        radius: widget.radius,
       ),
     );
   }

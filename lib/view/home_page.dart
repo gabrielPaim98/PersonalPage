@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:personallandingpage/components/constants.dart';
 import 'package:personallandingpage/view/about_me.dart';
@@ -14,21 +15,21 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<Widget> buildChildren(BuildContext context){
-    if(MediaQuery.of(context).size.width >= 1050){
-      return [
-        TopBanner(),
-        SizedBox(height: 64),
-        Skills(),
-        SizedBox(height: 128),
-        AboutMe(),
-      ];
-    } else {
+    if(MediaQuery.of(context).size.width <= 1050 || !kIsWeb){
       return [
         TopBannerMobile(),
         SizedBox(height: 32),
         SkillsMobile(),
         SizedBox(height: 64),
         AboutMeMobile(),
+      ];
+    } else {
+      return [
+        TopBanner(),
+        SizedBox(height: 64),
+        Skills(),
+        SizedBox(height: 128),
+        AboutMe(),
       ];
     }
   }
