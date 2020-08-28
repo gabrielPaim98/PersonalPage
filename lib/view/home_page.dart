@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:personallandingpage/components/constants.dart';
 import 'package:personallandingpage/view/about_me.dart';
+import 'package:personallandingpage/view/about_me_mobile.dart';
 import 'package:personallandingpage/view/skills.dart';
 import 'package:personallandingpage/view/skills_mobile.dart';
 import 'package:personallandingpage/view/top_banner.dart';
@@ -27,7 +28,7 @@ class _HomePageState extends State<HomePage> {
         SizedBox(height: 32),
         SkillsMobile(),
         SizedBox(height: 64),
-        //AboutMeMobile(),
+        AboutMeMobile(),
       ];
     }
   }
